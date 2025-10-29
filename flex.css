@@ -64,12 +64,40 @@
 
 /* Tablet Styles*/
 
+@media screen and (max-width: 1024px) {
+  .quarter {
+    width: calc(97% / 2);
+  }
+  
+  .flex-container {
+    height: auto;
+  }
 
-
+  [class^="box"] {
+    margin-bottom: .6rem;
+    &:is(:first-of-type){
+      margin-top: .6rem;
+    }
+  }
+  .box1,.box2.box3, {
+    order: -1;
+  }
+  .box7 {
+    order: 2;
+  }
+  .box6,.box8,.box9,.box10 {
+    order: 3;
+  }
+}
 
 /* Mobile Styles*/
 
-
+@media screen and (max-width: 640px) {
+  .half, .quarter, .third {
+    width: 98%;
+  }
+  
+}
 
 
 
